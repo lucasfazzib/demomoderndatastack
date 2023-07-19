@@ -1,38 +1,102 @@
 # demo-modern-data-stack
 
 Tasks: 
+Infrastructure:
 
-- Repository to store Pipeline stores using Modern Data Stack with AirByte + DBT + Airflow + SnowFlake + Metabase
+- Development environment setup (Hardware, Software - Linux, Python, Docker, Curl, Pip, Git, Npm, etc...) X
 
-- Create SnowFlake account
+- Set Gitpod Permissions to the Repository on Github X
 
-- Create DBT account
+- Upload Airbyte via docker X
 
-- Build the Pipeline environment $ ./setup.sh up
+- Upload Airflow via docker X
 
-- Copy the airbyte connection id in the terminal to finish installing the environment and create a dag in the airflow
+- Upload Metabase via docker X
 
-- Enter Airbyte on port 8000
+- Create the execution script ?
 
-- Set connection to google spreadsheet using credentials and spreadsheet id
+- Test the Execution ?
 
-- Set connection to Big Query using credentials and project id and dataset id
+- Snowflake data store:
+    
+    - Create a SnowFlake X Account
+    - Check the existence of X tables
+    - Get the X account name and connection links
 
-- Manual Sync and Data Overwrite
 
-- Configures or changes the Transfomation pointed to the dbt github 
+Extraction:
 
-- Comes back with no airflow and starts the dag trigger_airbyte_dbt_job
+- No Airbyte:
 
-- Check in Airbyte if Sync is running
+    - Connect with respiratory sources in Csvs X
+    - Create the entities in the snowflake through the X documentation base script
+    - Connect the destination in snowflake X
+    - Create the airbyte connections associating the sources to the destination X
+    - Test X connections
 
-Check in SnowFlake if you uploaded the dataset correctly
 
-- Metabase climbs on port 3000
+Preparation:
 
-- Airflow goes up on port 8080
+- No Airbyte (Target Loading Method):
 
-Key Files:
+    - Local Staging (Development Environment) X
+    - Cloud Staging (Production Environment) X
+
+
+Transformation:
+
+- No Debt:
+
+    - Creation of Account X
+    - Connection with Github X
+    - Creation of Dbt Project X
+    - Creation of the Connection Profile with snowflake X
+    - Creation of Schema X
+    - Creation of Base X Models
+    - Creation of Related Model X
+    - Graphical visualization of the X model
+    - X execution test
+    - Commits, Branches, Pull Requests, Merges on Github X
+    - Obtaining the connection link with Airbyte X
+
+
+visualization:
+
+- No metabase:
+
+    - Connect Metabase with Snowflake
+    - Create a question
+    - Create a Dashboard
+    - Add a question
+    - View the Result
+
+
+Orchestration:
+
+- No airflow:
+
+    - Create a dag
+
+    - Create a Docker network
+
+    - Including us makes up a created network
+
+    - Setup Up on the service
+
+    - Test the connection between airflow and airbyte containers
+
+- Configures or changes the Transfomation pointed to the dbt github (https://github.com/giu-ferreira-cientista/transformations)
+
+    - Test pipeline execution
+
+
+Closing:
+
+- Support Materials:
+
+    - Links
+
+    - Source code
 
 docker-compose-airflow.yaml
 docker-compose-airbyte.yaml
