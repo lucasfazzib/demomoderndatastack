@@ -20,7 +20,7 @@ Tasks:
 
 - Manual Sync and Data Overwrite
 
-- Configures or changes the Transfomation pointed to the dbt github (https://github.com/giu-ferreira-cientista/transformations)
+- Configures or changes the Transfomation pointed to the dbt github 
 
 - Comes back with no airflow and starts the dag trigger_airbyte_dbt_job
 
