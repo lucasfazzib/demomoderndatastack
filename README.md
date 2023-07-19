@@ -1,3 +1,3 @@
 # demo-modern-data-stack
 
-Tasks:
+Tasks: test
